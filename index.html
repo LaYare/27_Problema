@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap: Grid System</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- HTML5 Shim and Respond.js Agrega soporte para elementos HTML5 y media quieries en IE8 -->
+    <!-- ADVERTENCIA: Respond.js no soporta que ejecutes tu código via file:// -->
+    <!-- [if lt IE 9] -->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <!--  [endif] -->
+</head>
+<body>
+    <div class="container-fluid"><!--este es el container fluid-->
+      <header>
+         <div class="row"><!--este es el row del buscador-->
+           <div class="col-xs-5 col-md-9 col-lg-6">
+             <h1>
+               Site name
+             </h1>
+           </div>
+           <div class="col-xm-7 col-md-3 col-lg-6">
+              <ul>
+                <li>
+                  <a href="">
+                    <span class="glyphicon glyphicon-home"></span>Noticias  
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="glyphicon glyphicon-home"></span>Enlaces RSS
+                  </a> 
+                </li>
+                <li class="hidden-md hidden-sm hidden-xs">
+                  |
+                </li>
+                <li class="hidden-md hidden-sm hidden-xs">
+                  <form>
+                    <input type="search" name="search" placeholder="Ingresa tu bùsqueda">
+                    <button>
+                      Buscar
+                    </button>
+                  </form>
+                </li>
+              </ul>
+           </div>
+         </div><!--este es el row del buscador-->
+         <nav class="navbar navbar-default">
+          <div class="navbar-header"><!--este es el icono que solo se vera en version celular-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+              <span class="sr-only">Menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div><!--este es el icono que solo se vera en version celular-->
+          <div class="collapse navbar-collapse" id="nav"><!--este es el menu-->
+            <ul class="nav nav-tabs">
+              <li role="presentation" class="active"><a href="#">Bienvenido</a></li>
+              <li role="presentation"><a href="#">Actualidades</a></li>
+              <li role="presentation"><a href="#">En directo</a></li>
+              <li role="presentation"><a href="#">Reporte financiero</a></li>
+              <li role="presentation"><a href="#">Nuestra oferta</a></li>
+              <li role="presentation"><a href="#">De nosotros a usted</a></li>
+            </ul>
+          </div><!--este es el menu--> 
+        </nav>
+      </header>
+      <section>
+        <div class="row"><!--este es el row master-->
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6"><!--primer gran columna-->
+            <section><!--Primer seccion de historia destacada-->
+              <h2> 
+                <mark>
+                  Historia destacada
+                </mark>  
+              </h2>
+              <br>
+              <h4>Artículo | 
+                <small>publicado el 03/10/15</small>
+              </h4>
+              <h3>
+                Lorem ipsum dolor sit amet
+              </h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus, totam atque porro eum deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, mollitia porro suscipit animi quibusdam vitae voluptatum inventore sapiente, voluptate amet. Doloremque maiores blanditiis, consectetur, ipsum ab doloribus tempore veniam molestias!
+              </p>
+              <div class="row"><!--row de marcadores-->
+                <div class="col-xs-4">
+                  <h4>
+                    <span class="glyphicon glyphicon-bookmark"></span> Ver más...
+                  </h4>
+                </div>
+                <div class="col-xs-8">
+                  <h4>
+                    <span class="glyphicon glyphicon-tags"></span> Etiquetas: <small> <u>Lorem</u> <u>ipsum</u> <u>diligat</u></small>
+                  </h4>
+                </div>
+              </div><!--row de marcadores-->
+              <hr>
+            </section><!--Primer seccion de historia destacada-->
+            <section><!--segunda seccion webzone-->
+            <h4>
+              <mark>
+                Webzone
+              </mark>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <span>
+                 <u>Preguntas</u> | publicado el 09/10/15
+              </span>
+            </h4>
+             <h3>
+                Lorem ipsum dolor sit amet
+              </h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus, totam atque porro eum deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, mollitia porro suscipit animi quibusdam vitae voluptatum inventore sapiente, voluptate amet. Doloremque maiores blanditiis, consectetur, ipsum ab doloribus tempore veniam molestias!
+              </p>
+              <div class="row"><!--row de marcadores-->
+                <div class="col-xs-4">
+                  <h4>
+                    <span class="glyphicon glyphicon-bookmark"></span> Ver más...
+                  </h4>
+                </div>
+                <div class="col-xs-8">
+                  <h4>
+                    <span class="glyphicon glyphicon-tags"></span> Etiquetas: <small> <u>Lorem</u> <u>ipsum</u> <u>diligat</u></small>
+                  </h4>
+                </div>
+              </div><!--row de marcadores-->
+              <hr>
+            </section><!--segunda seccion webzone-->
+            <section><!--seccion de imagen y parrafo-->
+              <h4>
+                Artículo | 
+                <small>
+                  publicado el 09/10/15
+                </small>
+              </h4>
+              <h3>
+                Etiam lorem et suspira nostres
+              </h3>
+              <p class="text-center gris">
+                Foto
+              </p>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus, totam atque porro eum deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, mollitia porro suscipit animi quibusdam vitae voluptatum inventore sapiente, voluptate amet. Doloremque maiores blanditiis, consectetur, ipsum ab doloribus tempore veniam molestias!
+              </p>
+              <div class="row"><!--row de marcadores-->
+                <div class="col-xs-4">
+                  <h4>
+                    <span class="glyphicon glyphicon-bookmark"></span> Ver más...
+                  </h4>
+                </div>
+                <div class="col-xs-8">
+                  <h4>
+                    <span class="glyphicon glyphicon-tags"></span> Etiquetas: <small> <u>Lorem</u> <u>ipsum</u> <u>diligat</u></small>
+                  </h4>
+                </div>
+              </div><!--row de marcadores-->
+              <hr>
+            </section><!--seccion de imagen y parrafo-->
+            <section><!--ultima seccion de parrafo-->
+            <h3>Lorem ipsum et diligat gentris</h3>
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus, totam atque porro eum deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, mollitia porro suscipit animi quibusdam vitae voluptatum inventore sapiente, voluptate amet. Doloremque maiores blanditiis, consectetur, ipsum ab doloribus tempore veniam molestias!
+              </p>
+              <div class="row"><!--row de marcadores-->
+                <div class="col-xs-4">
+                  <h4>
+                    <span class="glyphicon glyphicon-bookmark"></span> Ver más...
+                  </h4>
+                </div>
+                <div class="col-xs-8">
+                  <h4>
+                    <span class="glyphicon glyphicon-tags"></span> Etiquetas: <small> <u>Lorem</u> <u>ipsum</u> <u>diligat</u></small>
+                  </h4>
+                </div>
+              </div><!--row de marcadores-->
+              <hr>
+            </section><!--ultima seccion de parrafo-->
+          </div><!--primer gran columna-->
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-4"><!--segunda gran columna-->
+            <section>
+              <div class="row"><!--row del video y parrafo-->
+                <div class="col-xs-12 g">
+                  <h2> 
+                    <mark>
+                      Historia destacada
+                    </mark>  
+                  </h2>
+                  <img src="img/video.png" alt="video" class="img-responsive vid">
+                  <h4>
+                    Claire Dupond
+                  </h4>
+                  <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repellat voluptatibus, aperiam molestias quis repellendus, dignissimos quod illum aliquid omnis, nisi nostrum placeat tempora magnam! Quae blanditiis rerum accusamus consequuntur.
+                  </p>
+                  <div class="row"><!--row de marcadores-->
+                    <div class="col-xs-8">
+                      <small>
+                        publicado el 09/10/15
+                      </small>
+                    </div>
+                    <div class="col-xs-4">
+                      <h5>
+                        <span class="glyphicon glyphicon-bookmark"></span> Ver más...
+                      </h5>
+                    </div>
+                  </div><!--row de marcadores-->
+                </div>
+              </div><!--row del video y parrafo-->
+              <div class="row"><!--row de la agenda-->
+                <div class="col-xs-12">
+                  <div class="row"><!--renglon de agenda-->
+                    <h2>
+                      <mark class="pd">
+                        Agenda
+                      </mark>
+                    </h2>
+                    <div class="col-xs-3 age">
+                      23 Enero
+                    </div>
+                    <div class="col-xs-9">
+                      <h4>
+                        Lorem ipsum et diligat
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam.
+                      </p>
+                      <p>
+                        De 23 a 28 Diciembre 2015
+                      </p>
+                    </div>
+                  </div><!--renglon de agenda-->
+                  <div class="row"><!--renglon de agenda-->
+                    <div class="col-xs-3 age">
+                      23 Enero
+                    </div>
+                    <div class="col-xs-9">
+                      <h4>
+                        Lorem ipsum et diligat
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam.
+                      </p>
+                      <p>
+                        De 23 a 28 Diciembre 2015
+                      </p>
+                    </div>
+                  </div><!--renglon de agenda-->
+                  <div class="row"><!--renglon de agenda-->
+                    <div class="col-xs-3 age">
+                      23 Enero
+                    </div>
+                    <div class="col-xs-9">
+                      <h4>
+                        Lorem ipsum et diligat
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam.
+                      </p>
+                      <p>
+                        De 23 a 28 Diciembre 2015
+                      </p>
+                    </div>
+                  </div><!--renglon de agenda-->
+                  <div class="row"><!--renglon de agenda-->
+                    <div class="col-xs-3 age">
+                      23 Enero
+                    </div>
+                    <div class="col-xs-9">
+                      <h4>
+                        Lorem ipsum et diligat
+                      </h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam.
+                      </p>
+                      <p>
+                        De 23 a 28 Diciembre 2015
+                      </p>
+                    </div>
+                  </div><!--renglon de agenda-->
+                </div>
+              </div><!--row de la agenda-->
+              <hr>
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3>
+                    Más información
+                  </h3>
+                  <p>
+                    <u><b>Localidades</b></u>
+                  </p>
+                  <h4>Lorem ipsum dolor sit</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit.
+                  </p>
+                  <br>
+                  <p>
+                    <u><b>Hospimedia</b></u>
+                  </p>
+                  <h4>Lorem ipsum dolor sit</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div><!--segunda gran columna-->
+          <div class="hidden-xs hidden-sm hidden-md col-lg-2"><!---aside-->
+            <h4>
+              Más información
+            </h4>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span> 
+              <small><b>Finanazas y fiscalización</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Inversión y equipos</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Medio ambiente</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Habitat / Urbanismo</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Sanidad</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Social / Servicios</b></small>
+            </p>
+            <p class="mgl">
+              <span class="glyphicon glyphicon-bookmark"></span>
+              <small><b>Transporte</b></small>
+            </p>
+            <hr>
+            <div class="row"><!--ecodefi-->
+              <div class="col-xs-12 gi">
+                <h4>
+                  MAGAZINE
+                </h4>
+                <h4>
+                  ECODEFI
+                </h4>
+                <p>
+                  ENQUETE
+                </p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor rem est at et distinctio accusamus quis autem laudantium!
+                </small>
+                <br><br>
+                <p>
+                  PREGUNTAS
+                </p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </small>
+              </div>
+            </div><!--ecodefi-->
+            <div class="row mgt"><!--acciones comunes-->
+              <div class="col-xs-12 gi">
+                <h4>
+                  MAGAZINE
+                </h4>
+                <h4>
+                  ACCIONES COMUNES
+                </h4>
+                <p>
+                  ENQUETE
+                </p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor rem est at et distinctio accusamus quis autem laudantium!
+                </small>
+                <br><br>
+                <p>
+                  PREGUNTAS
+                </p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </small>
+              </div>
+            </div><!--acciones comunes-->
+            <div class="row mgt">
+              <div class="col-xs-12 gi">
+                <h5>Nueva generación de la internet</h5>
+              </div>
+            </div>
+          </div><!---aside-->
+        </div><!--este es el row master-->
+      </section>
+      <footer>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><!--rubros-->
+            <h4>
+              Rubros
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Actualidades
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              En directo
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Reporte financiero
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Nuestra oferta
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              De Nosotros a ustedes
+            </p>
+          </div><!--Rubros-->
+          <div class="hidden-xs hidden-sm hidden-md col-lg-3"><!--expertise-->
+            <h4>
+              Expertise
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Finanzas y fiscalización
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Investigación y equipos
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Medio ambiente
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Habitat / Urbanismo
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Sanidad
+            </p>
+             <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Social / Servicios
+            </p>
+             <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Transporte
+            </p>
+          </div><!--Expertise-->
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2"><!--Suscripcion-->
+            <h4>
+              Suscripción
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Todo el flujo
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Flujo RSS para expertos
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Noticias
+            </p>
+          </div><!--Suscripción-->
+          <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><!--nosotros-->
+            <h4>
+              Nosotros
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              ¿Quienes somos?
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Plan del sitio
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Información legal
+            </p>
+          </div><!--Nosotros-->
+          <div class="hidden-xs hidden-sm col-md-3 col-lg-2"><!--Contacto-->
+            <h4>
+              Contacto
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Contáctanos
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              FAQ
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Haga sus preguntas
+            </p>
+          </div><!--Contacto-->
+        </div>
+        <div class="row hidden-md hidden-lg">
+          <div class="col-xs-6 col-sm-6"><!--nosotros-->
+            <h4>
+              Nosotros
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              ¿Quienes somos?
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Plan del sitio
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Información legal
+            </p>
+          </div><!--Nosotros-->
+          <div class="col-xs-6 col-sm-6"><!--Contacto-->
+            <h4>
+              Contacto
+            </h4>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Contáctanos
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              FAQ
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-bookmark"></span>
+              Haga sus preguntas
+            </p>
+          </div><!--Contacto-->
+        </div>
+      </footer>
+    </div><!--este es el container fluid-->
+
+	<!-- Incluir todos tus scripts apartir de este punto -->
+    <!-- jQuery (necesario para que funcionen los componentes de Bootstrap) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
